@@ -52,6 +52,7 @@ using ScopedValues: ScopedValue, with
 const compile_hook = ScopedValue{Union{Nothing,Function}}(nothing)
 
 include("utils.jl")
+include("device_function.jl")
 include("mangling.jl")
 
 # compiler interface and implementations
