@@ -56,6 +56,7 @@ const compile_failure_hook = ScopedValue{Any}(nothing)
 
 include("utils.jl")
 @public run_compile_hook, with_compile_hook, emit_hooked_compilation
+include("device_function.jl")
 include("mangling.jl")
 
 # compiler interface and implementations
